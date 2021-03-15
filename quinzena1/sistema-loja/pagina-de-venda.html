@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>Controle de Estoque</title>
+    <title>Página de Venda</title>
 </head>
 <body>
-      <div class="menu">    
+    <div class="menu">    
         <div>
             <p>Mercadinho pra você</p>
         </div>
@@ -22,40 +22,69 @@
             <a href="file:///C:/Users/nascimento/Mayara-Nascimento/quinzena1/sistema-loja/pagina-de-venda.html"><img src="img/sacola-de-compras-quadrada-com-alca.svg" alt="">Vendas</a>
         </div>
     </div>
+    <h2>Página de Venda</h2>
+
+    <h2>Lista de produtos</h2>
+
+    
+
+    <form oninput="result.value=parseInt(p.string)+parseInt(valor.string)">
+        <label for="text">Produto</label>
+        <input type="text" name="p" placeholder="Produto" id="">
+
+        <label for="">Preço</label>
+        <input type="number" name="valor" placeholder="Preço" id="">
+
+        <p>Opção de pagamento</p> 
+        
+
+        <label for="campo-radio1">Dinheiro</label>  
+        <input type="radio" value="0" name="pagamento" id="dinheiro" />             
+
+         
+        <label for="campo-radio2">Cartão</label>
+        <input type="radio" value="0" name="pagamento" id="cartao" />    
+
   
-    <h2>Controle de Estoque</h2>
+    </form>
+
+  
+
+
+    <h2>Total</h2>
+    
+
+    
+    <h3>Lista de produtos selecionados:</h3>
+
 
     <table>
         <tr>
-            <th>Foto</th>
+            
             <th>Descrição</th>
             <th>Preço (R$)</th>
             <th>Quantidade disponível</th>
         </tr>
 
         <tr>
-            <td><img src="C:\Users\nascimento\Mayara-Nascimento\quinzena1\sistema-loja\img\graos.jfif" alt="grãos"/></td>
             <td> Grãos </td>
             <td> R$ 18,00 </td>
             <td> 41 </td>
         </tr>
 
         <tr>
-            <td><img src="C:\Users\nascimento\Mayara-Nascimento\quinzena1\sistema-loja\img\milho.jpg" alt="milho"/></td>
             <td> Milho </td>
             <td> R$ 18,00</td>
             <td> 89</td>
         </tr>
 
         <tr>
-            <td><img src="C:\Users\nascimento\Mayara-Nascimento\quinzena1\sistema-loja\img\feijao.jpg" alt="feijao"/></td>
             <td> Feijão </td>
             <td> R$ 18,00</td>
             <td> 66 </td>
         </tr>
 
         <tr>
-            <td><img src="C:\Users\nascimento\Mayara-Nascimento\quinzena1\sistema-loja\img\arroz.jpg" alt="Arroz"/></td>
             <td> Arroz </td>
             <td> R$ 18,00</td>
             <td> 72 </td>
@@ -65,23 +94,13 @@
         <!-- Crie mais uma linha desta tabela abaixo \/ -->
 
         <tr>
-            <td><img src="C:\Users\nascimento\Mayara-Nascimento\quinzena1\sistema-loja\img\soja.jpg" alt="Grão de Soja"/></td>
             <td> Soja </td>
             <td> R$ 18,00</td>
             <td> 34</td>
         </tr>
 
     </table>
-    <footer>
-        <div>
-            <p>Siga-nos nas redes sociais!</p>
-        <div class="icon">
-            <img src="https://image.flaticon.com/icons/png/512/25/25305.png"/>
-            <img src="https://image.flaticon.com/icons/png/512/25/25425.png"/>
-            <img src="https://image.flaticon.com/icons/png/512/8/8800.png"/>
-            
-        </div>
-    </div>
-    </footer>
+
+    <input type="submit" value="Calcular">
 </body>
 </html>
