@@ -7,6 +7,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -20,30 +21,38 @@ h2 {
 input {
     height: 20px;
     width: 500px;
+    border-width: 0 0 1px 0;
+    
 }
 
 button:focus {
     color: white;
 }
 
-img {
-}
+
 
 div>p:first-child {
     display: inline;
 }
 
 div img {
-    background: black;
+    width: 60px;
+    
+}
+
+.icone{
+    width: 20px;
 }
 
 .botao-amarelo {
+    margin: 20px auto;
     background-color: #ffaf43;
     width: 250px;
     height: 40px;
     border-radius: 5px;
     font-size: 20px;
     color: white;
+    border: none;
 }
 
 .botao-amarelo:hover {
@@ -72,9 +81,12 @@ div img {
 }
 
 
+#container-de-descricao>ol {
+   margin: 20px auto;
+}
 
 #container-de-descricao>ol>li {
-    width: 190px;
+    width: 250px;
     margin: 0 auto;
 }
 
@@ -105,6 +117,8 @@ div:last-child {
 
 table {
     width: 60%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 td button {
@@ -135,6 +149,3 @@ td button {
     background-color: #635a3d
 }
 
-button>.icon{
-    background-color: aqua;
-}
