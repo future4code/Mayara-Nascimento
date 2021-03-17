@@ -17,6 +17,7 @@ h2 {
     color: white;
     text-align: center;
 }
+
 h3{
     font-size: 1.1rem;
     font-weight: 500;
@@ -29,8 +30,13 @@ input {
     
 }
 
+input:focus {
+    border:none;
+}
+
 button:focus {
     color: white;
+    border: none;
 }
 
 
@@ -47,6 +53,11 @@ div img {
 .icone{
     width: 20px;
 }
+
+.icone:hover{
+    filter: opacity(50%);
+}
+
 
 .botao-amarelo {
     margin: 20px auto;
@@ -134,7 +145,7 @@ div:last-child {
 
 table {
     width: 60%;
-    margin: 0 auto;
+    margin: 30px auto;
     text-align: center;
     
 }
@@ -161,6 +172,7 @@ td button {
     border-radius: 5px;
     font-size: 10px;
     color: black;
+    margin-top: 100px;
 }
 
 #back-button:hover {
