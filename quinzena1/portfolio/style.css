@@ -1,0 +1,687 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat', 'poppins';
+}
+
+
+
+.logo {
+    float: left;
+    padding: 8px 0;
+    margin: 3px 0 0 0;
+}
+
+.logo img{
+    width: 1.5rem;
+}
+
+nav.menu {
+    float: right;
+}
+
+nav.menu li {
+    display: inline-block;
+    padding: 12px;
+}
+
+header {
+    text-align: center;
+    width: 50%;
+    padding: 8px 0;
+    margin: 0 auto;
+}
+
+/*Menu Responsivo*/
+@media(max-width:768px){
+    header{
+        width: 98%;
+        padding: 4px 4px;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+}
+
+li a {
+    text-decoration:none;
+    color: black;
+
+}
+
+
+/*linhas de estilização*/
+#linha a:hover{
+    width:90px;
+    margin: -7px 0 0 0px; 
+    border-bottom: 4px solid #FFD1F2;
+}
+
+
+#linha2:hover{
+    width:73px;
+    margin: -7px 0 0 0px; 
+    border-bottom: 4px solid #FFD1F2;
+
+}
+
+#linha3:hover{
+    width:64px;
+    margin: -7px 0 0 0px;
+    border-bottom: 4px solid #FFD1F2;
+
+}
+
+#line{
+    width:198px;
+    margin: -10px 0 0 0px;
+    border-bottom: 8px solid #FFD1F2;
+}
+
+#linha-meio{
+    width:128px;
+    margin: -10px 0 0 0px; 
+    border-bottom: 8px solid #FFD1F2;
+}
+
+#linha-meio3{
+    width:159px;
+    margin: -10px 0 0 0px; 
+    border-bottom: 8px solid #FFD1F2;
+}
+
+
+#linha-meio4{
+    width:220px;
+    margin: -10px 0 0 0px; 
+    border-bottom: 10px solid #FFD1F2;
+
+}
+
+
+#linha-fim{
+    width:100px;
+    margin: -10px 0 0 0px; 
+    border-bottom: 10px solid #FFD1F2;
+
+}
+
+#line-glr{
+    width:294px;
+    margin: -10px 0 0 0px; 
+    border-bottom: 8px solid #FFD1F2;
+}
+
+/*Começa as informações*/
+
+.bg-top{
+    width: 55%;
+    margin: 80px auto 0;
+    padding: 2%;
+    text-align: center;
+    
+   
+}
+
+/*Responsivo*/
+@media(max-width:768px) {
+    .bg-top{
+        width: 90%;
+        margin: 80px auto 0;
+        padding: 2%;
+        text-align: center;
+        
+       
+    }
+    .cbç1 {
+        width: 90%;
+        /*float: left;*/
+    }
+
+    .cbç1>h1{
+        width: 300px;
+        margin: 0px auto;
+    }
+
+    .cbç1>p{
+        width: 250px;
+        margin: 0 auto;
+        text-align: left;
+        line-height: 1.4rem;
+    }
+
+
+  
+
+}
+
+
+
+
+/*Responsivo ~ fim*/
+.cbç2 {
+    width: 90%;
+    /*float: left;*/
+}
+
+
+.cbç2 > img {
+    max-width: 100%;
+    height: 90%;
+    text-align: right;
+}
+
+@media (max-width:768px){
+    .cbç2>img{
+        max-width: 100%;
+        height: 50%;
+}
+
+}
+
+/*configuraçao da página inteira*/
+.cbç1 {
+    width: 50%;
+    /*float: left;*/
+}
+
+.cbç1>h1{
+    
+    margin: 20px auto;
+    text-align: left;
+}
+
+.cbç1>p{
+    margin: 20px auto;
+    text-align: left;
+    line-height: 1.4rem;
+}
+
+
+
+
+
+
+.bg-meio{
+    width: 55%;
+    margin: 0 auto;
+    padding: 2%;
+    text-align: left;
+   
+}
+
+.meio1{
+    margin: 0 auto;
+
+}
+
+.meio1>h1{
+    margin: 0px auto;
+}
+
+.meio1>h3{
+   margin: 30px auto 0;
+}
+.meio1>p{
+    margin: 5px auto 50px;
+}
+
+
+/* as porcentagens*/
+
+
+
+#porcentagemht{
+    
+    width: 89%;
+    margin: 0; 
+    border: 20px solid #FFC9C4;
+   
+}
+
+#porcentagemcss{
+    
+    width: 59%;
+    margin: 0; 
+    border: 20px solid #FFC9C4;
+   
+}
+
+#porcentagemjs{
+    
+    width: 9%;
+    margin: 0; 
+    border: 20px solid #FFC9C4;
+   
+}
+
+#porcentagemxd{
+    
+    width: 79%;
+    margin: 0; 
+    border: 20px solid #FFC9C4;
+   
+}
+
+#porcentagemcom{
+    width: 70%;
+    margin: 0; 
+    border: 20px solid #FFC9C4;
+
+}
+
+
+/* Segunda parte do portfólio*/
+
+.meio2{
+    margin: 80px auto;
+
+}
+
+.meio2>div{
+    margin: 50px auto;
+}
+
+.meio2>div>h3{
+    margin: 18px auto;
+}
+
+
+
+#num{
+    float: right;
+    text-align: right;
+}
+
+.meio2>div>h1{
+    margin: 30px auto;
+}
+
+.meio2>div>p{
+   margin: 20px auto;
+}
+
+
+/*Seção da galeria*/
+
+.bg-final{
+    width: 55%;
+    margin: 80px auto 0;
+    padding: 2%;
+   
+    
+   
+}
+
+/* Responsivo ~*/
+@media (max-width:768px) {
+
+
+    .bg-final{
+    width: 90%;
+    margin: 0 auto;
+    padding: 2%;
+    }
+
+    .bg-meio{
+    width: 90%;
+    margin: 0 auto;
+    padding: 2%;
+    }
+
+}
+
+
+
+
+/* Responsivo ~*/
+
+.img-glr1 {
+ margin: 30px auto;
+ padding: 0;
+  /*border: 4px solid #d823a5;
+ background-color: #bbbbbb44;*/
+
+}
+
+.img-glr1>a>div{
+    display: inline-block;
+}
+
+@media(max-width:768px){
+    .img-glr1>a>div{
+        display:block;
+        text-align: center;
+        margin: 2% auto;
+    }
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+#one{
+    width: 30%;
+    height: 30%;
+    background-image: url("img/projetolabenu.capa.png");
+    background-position: 390px 570px;
+    padding: 40px;
+    box-shadow: 2px 6px 4px #2525251c;
+}
+#one:hover{
+    background: linear-gradient(#ff5fff00,#ff00aa50), url("img/projetolabenu.capa.png");
+    background-position: 395px 585px;
+    font-weight: 600;
+    font-size: 1.1rem;
+   
+    
+}
+@media(max-width:768px){
+    #one{
+        width: 80%;
+        height: 30%;
+    }
+
+}
+
+
+#dois{
+    width: 30%;
+    height: 30%;
+    background-image: url("img/segundoprojeto.png");
+    background-position: 490px 370px;
+    padding: 40px;
+    box-shadow: 2px 6px 4px #2525251c;
+    color:#fff9fd;
+}
+#dois:hover{
+    background: linear-gradient(#ff5fff00,#ff00aa50), url("img/segundoprojeto.png");
+    background-position: 395px 285px;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+@media(max-width:768px){
+
+
+    #dois{
+        width: 80%;
+        height: 30%;
+    }
+}
+
+
+#tres{
+    width: 30%;
+    height: 30%;
+    background-color:#E895BE;
+    padding: 40px;
+}
+#tres:hover{
+    background-color: #dd84b0;
+}
+@media(max-width:768px){
+
+
+    #tres{
+        width: 80%;
+        height: 30%;
+    }
+}
+/*
+.img-glr1 >h3,p{
+    margin: 0 auto;
+}
+
+
+.img-glr1> img{
+    max-width: 100%;
+    height: 80%;
+    margin: 0 auto;
+}
+*/
+
+/*Estilização da pagina */
+.pj-labenu{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+@media(max-width:768px){
+
+    .pj-labenu{
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+        background-color: #ffffff;
+    
+    }
+  
+}    
+    
+    
+    
+    button{
+        font-size: 1rem;
+        background-color: #ffffff;
+        text-transform: uppercase;
+        padding: 2%;
+        margin: 30px auto;
+        border: 2px solid #FFD1F2;
+    
+    }
+    
+    button:hover{
+        background-color: #FFD1F2;
+    }
+    
+    button:active{
+        background-color: #FFD1F2;
+        border: 1px solid #FFD1F2;
+    }
+    
+    
+    
+
+
+
+
+.pj-labenu> h1{
+    margin: 20px auto;
+    width: 80%;
+    font-size: 2.5rem;
+    padding: 2%;
+  
+}
+
+@media (max-width:768px){
+    .pj-labenu>h1{
+        width: 80%;
+        font-size: 1.8rem;
+        margin: 20px auto;
+    }
+    
+}
+
+.pj-labenu>p{
+    width:50%;
+    font-size: 2rem;
+    margin: 30px auto;
+    padding: 0;
+}
+@media(max-width:768px){
+    .pj-labenu>p{
+        width:80%;
+        font-size: 1.3rem;
+        margin: 20px auto;
+        
+    }
+}
+
+
+
+a {
+    text-align: center;
+}
+
+button{
+    font-size: 1.2rem;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    padding: 2%;
+    margin: 30px auto;
+    border: 2px solid #dd84b0;
+
+}
+
+button:hover{
+    background-color: #dd84b0;
+}
+
+button:active{
+    background-color: #dd84b0;
+    border: 1px solid #dd84b0;
+}
+
+
+
+
+
+.imagem{
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), #dd84b175 ), url("img/projetolabenu.capa.png");
+    background-position: 390px 500px;
+}
+.imagem:hover{
+    background-image: linear-gradient(rgba(255, 255, 255, 0), #dd76a9a9 ), url("img/projetolabenu.capa.png");
+    background-position: 390px 510px;
+}
+
+
+
+.imagem2{
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), #dd84b175 ), url("img/segundoprojeto.png");
+    background-position: 490px 900px;
+}
+.imagem2:hover{
+    background-image: linear-gradient(rgba(255, 255, 255, 0), #dd76a9a9 ), url("img/segundoprojeto.png");
+    background-position: 490px 400px;
+}
+
+
+/*Estilização da pagina */
+
+
+/*Formulário*/
+.formulario{
+    
+    width: 50%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+}
+
+@media(max-width:768px){
+    .formulario{
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
+        text-align: left;
+    }
+    
+}
+
+form{
+    margin: 30px auto;
+    padding:0;
+}
+
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+textarea{
+    width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 1.8px solid rgb(118, 118, 118);
+  border-radius: 4px;
+  resize: none;
+}
+
+input[type=submit]{
+    width: 20%;
+    text-align: left;
+  background-color: #ff9d94;
+  border: none;
+  color: white;
+  padding: 16px 40px;
+  text-decoration: none;
+  margin: 14px 0;
+  cursor: pointer;
+}
+
+input[type=submit]:hover{
+    background-color: #dd5245;
+}
+
+@media (max-width:768px){
+
+    input[type=submit]{
+        text-align: left;
+        width: 30%;
+        padding: 16px 20px;
+    }
+    
+}
+
+
+/*footer*/
+.final{
+    width: 55%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5%;
+}
+
+footer>p{
+    margin: 20px auto;
+}
+
+footer>span>a>img{
+    margin: 0 auto;
+    width: 3%;
+
+}
+@media(max-width:768px){
+    footer>span>a>img{
+        margin: 0 auto;
+        width: 12%;
+    
+    }
+}
+
+.final>footer>span{
+    margin: 0 auto;
+    padding: 5%;
+}
