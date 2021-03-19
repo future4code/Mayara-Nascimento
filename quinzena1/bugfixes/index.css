@@ -7,7 +7,9 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
+
 
 h2 {
     background-color: #fe7e02;
@@ -16,55 +18,83 @@ h2 {
     text-align: center;
 }
 
+h3{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
 input {
     height: 20px;
     width: 500px;
+    border-width: 0 0 1px 0;
+    
+}
+
+input:focus {
+    border:none;
 }
 
 button:focus {
     color: white;
+    border: none;
 }
 
-img {
-    width: 100px;
-}
+
 
 div>p:first-child {
     display: inline;
 }
 
 div img {
-    background: black;
+    width: 60px;
+    
 }
 
+.icone{
+    width: 20px;
+}
+
+.icone:hover{
+    filter: opacity(50%);
+}
+
+
 .botao-amarelo {
+    margin: 20px auto;
     background-color: #ffaf43;
     width: 250px;
     height: 40px;
     border-radius: 5px;
     font-size: 20px;
     color: white;
+    border: none;
 }
 
 .botao-amarelo:hover {
     background-color: #c44f00;
 }
 
+td>button {
+    border: none;
+    
+
+}
+td>button:hover {
+    background-color: #c44f00;
+}
+
+td>button:active {
+    color: #ffffff;
+}
+
 .container {
-    height: 500px;
+    padding: 3%;
+    margin: 0 auto;
+    height: 300px;
     text-align: center;
-    padding: 2%;
-    list-style-type: none;
 
 }
 
-ol{
-    counter-reset: item;
-}
-
-.icone {
-    height: 15px;
-}
 
 
 /** 
@@ -78,19 +108,28 @@ ol{
     color: white;
 }
 
+
 #container-de-descricao>ol {
-    padding: 15px 0px;
+   margin: 20px auto;
 }
+
+#container-de-descricao>ol>li {
+    width: 250px;
+    margin: 0 auto;
+}
+
+
 
 #container-para-comprar {
     background-color: #e7eb90;
 }
 
 #container-para-comprar>p {
+    margin: 20px auto;
     color: #c44f00;
-    padding: 100px 0;
     font-size: 60px;
 }
+
 
 
 /**
@@ -106,6 +145,9 @@ div:last-child {
 
 table {
     width: 60%;
+    margin: 30px auto;
+    text-align: center;
+    
 }
 
 td button {
@@ -130,8 +172,10 @@ td button {
     border-radius: 5px;
     font-size: 10px;
     color: black;
+    margin-top: 100px;
 }
 
 #back-button:hover {
     background-color: #635a3d
 }
+

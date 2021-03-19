@@ -1,0 +1,96 @@
+body {
+    font-family: 'Poppins', 'montserrat', 'roboto';
+    background-color: rgba(233, 227, 227, 0.897);
+}
+
+.menu{
+   padding: 5px;
+   background-color: blueviolet;
+   color: rgb(255, 255, 255);
+   text-decoration: none;
+   margin:0;
+}
+
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 2%;
+}
+
+footer{
+    background-color: blanchedalmond;
+    position: absolute;
+    overflow: none;
+    width: 99%;
+    height: 30vh;
+}
+
+.icon>img {
+    margin: 20px;
+   padding: 2px;
+    width: 30px;
+}
+
+
+button{
+    margin-top: 14px;
+    margin-bottom: 10px;
+    margin-left: 0.2%;
+    padding: 2%;
+    background-color: crimson;
+    color: #ffff;
+    border: none;
+    font-family:'Poppins','montserrat';
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+form>div{
+    margin: 1.5%;
+}
+
+td{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+tr{
+    background-color: rgb(116, 188, 201);
+    padding: 2.8%;
+}
+
+
+li{ 
+    margin-top: 2%;
+    font-weight: 500;
+}
+  
+
+
+
+
+a>img{
+    width: 13px;
+    margin: 0 4px;
+}
+
+
+div>table{
+    margin: 10px 0;
+}
+
+
+input[type=submit]{ 
+    margin-top: 14px;
+    margin-bottom: 10px;
+    margin-left: 0.2%;
+    padding: 0.8%;
+    background-color: crimson;
+    color: #ffff;
+    border: none;
+    font-family:'Poppins','montserrat';
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
