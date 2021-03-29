@@ -1,298 +1,574 @@
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            
 }
 
 body, html{
-    font-family:'montserrat','Roboto', 'Arial';
+    font-family: 'Segoe UI', 'open sans';
     font-size:1rem;
-    background-color:#222226;
-    color:#F2F2F2;
-    width: 100vw;
-    height: 100vh;
+    scroll-behavior: smooth;
+    color: #1f1f24;
 }
 
 
-/*Cores: cor do menu:  #1F1F24; claras:#F2F2F2 #D9C7B8 #8C837B &&& escuras: #575759 #222226*/
-
-/*menu*/
-.container-header{
+.container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 20%;
-}
+    /*grid-template-columns: 1fr 1fr 1fr;*/
+    grid-template-columns:repeat (auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: auto;
+    /*grid-column-gap:0.2em;*/
+    align-items: center;
+    grid-template-areas: "h h h"
+                        "m m m"
+                        "t t t" 
+                        "c1 c2 c3"
+                        "t2 t2 t2"
+                        "d1 d2 d3"
+                        "t3 t3 t3"
+                        "f f f";
 
-@media(max-width:320px){
-    .container-header{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 20% 20%;
-    }
-
-}
-
-/*CONTEUDO */
-
-
-header{
-    grid-column:1;
-    width: 100vw;
-    height: 14vh;
-    background-color: #1F1F24;
+   
     
 }
 
-@media(max-width:320px){
-    header{
-        grid-column:1;
-        width: 100vw;
-        height: 14vh;
-        background-color: #1F1F24;
+
+/* Começo da Breakpoint*/
+
+@media all and (max-width:900px) and (min-width:320px){
+    .container{
+        display: grid;
+        grid-template-columns: 99.99vw;
+        grid-auto-rows: auto;
+        grid-template-areas: "h"
+                             "m"
+                             "t"
+                             "c1"
+                             "c2"
+                             "c3"
+                             "t2"
+                             "d1"
+                             "d2"
+                             "d3"
+                             "t3"
+                             "f";
+    }
+
+    html,body{
+        font-size: 80%;
+    }
+
+    ul{
+       font-size:1.2rem;
+       
+    }
+
+
+    main{
+        display: flex;
+        flex-direction: column;
         
     }
 
-}
-
-
-#logo{
-    grid-column-start:1;
-    margin: 0 20%;
-    width: 100px;
-    height: 80px;
-
-    background-image: url(img/upfour.png);
-    background-position: 50% 50%;
-    background-size: 150px;
-}
-
-@media(max-width:320px){
-
-    #logo{
-        grid-column-start:1;
-        margin: 2% 2%;
-        width: 100px;
-        height: 30px;
-    
-        background-image: url(img/upfour.png);
-        background-position: 50% 50%;
-        background-size: 100px;
+    main h1{
+        width: 80vw;
+        
     }
+
+    main a button{
+        margin:-1.8em 0 0  2em;
+        padding: 1em 2em;
+        
+        font-size:1.5rem;
+    }
+
+    #background-main{
+        justify-content: center;
+        width: 90%;
+        margin: 2rem 0 4rem 0;
+       
+    }
+
+    #container-1{
+        font-size: 1.1rem;
+    }
+
+    #container-2{
+        font-size: 1.1rem;
+    }
+
+    #container-3{
+        font-size: 1.1rem;
+    }
+
+    #texto2>p{
+        font-size: 1.1rem;
+        
+    }
+
+    #texto3{
+        display: flex;
+        flex-direction: column;
+        width: 99vw;
+        
+    }
+
+    #texto3 div{
+        width: 80vw;
+    }
+
+    #texto3>div>p{
+        font-size: 1.1rem;
+    }
+
+    #texto3 div h2{
+        width: 80vw;
+
+    }
+    #texto3 div p{
+        width: 70vw;
+        margin: 4rem 0 2rem 0;
+    }
+
+    #texto3 form{
+        width: 22rem;
+        margin: 0 2rem 2rem 2rem;
+    }
+
+    footer{
+        font-size: 1.1rem;
+    }
+    
+    footer a img{
+        width: 1.275rem;
+        padding: 0.251rem;
+    }
+
 }
 
 
-ul {
+
+/* Fim - Breakpoint */
+
+
+
+/* ~ Menu ~  */
+nav{
+    grid-column: 1/4;
+    background-color: #1f1f24;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: h;
+    height: 12vh;
+}
+@media (max-width:800px) {
+    nav{
+        display: flex;
+        flex-direction: row;
+        height: 12vh;
+    }
+
+}
+#logo{
+    width: 100px;
+}
+
+
+ul{
     display: flex;
     list-style-type: none;
-    margin: 5% 0;
-    
+   
 }
 
 li{
-    margin: 0 14px 0 2%;
-    display: block;
+    padding: 1em;
 }
 
-ul a{
+nav a{
     text-decoration: none;
-    color: #F2F2F2;
-}
-
-@media(max-width:320px){
+    color:#D1C2B0;
     
-ul {
-    display:inline-flex;
-    grid-row-start:2;
-    list-style-type: none;
-    margin: 15px 2% 0 2%;
-    font-size:0.9rem;
+    
 }
 
-li{
-    margin: 0 2px 0 1%;
-}
-
-ul a{
-    text-decoration: none;
-    color: #F2F2F2;
-}
-
-}
-
-
-/*menu final do menu - não mexa nas configurações - na hora de ler o código lembre da regra de container - items */
-
-
-/* Seção principal*/
-
-.principal{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-
-}
-
-
-/*Primeira div do conteúdo principal*/
-.principal>.p1{
-    grid-column-start:1;
-    margin:0;
-    width: 100%;
-    height: 80vh;
-    /*background-color: rgb(179, 2, 2);*/
+nav a:active{
+    color:white;
 }
 
 
 
-.principal>.p1>h1{
-    margin: 20% 20% 0 50px;
-    font-size: 20px;
-    font-weight: 400;
+
+/*Conteúdo do meio*/
+
+main{
+    grid-column: 1/4;
+   
+    display: flex;
+    padding: 0.125rem;
+
+    grid-area: m;
+    margin: 0 0 4rem 0;
+}
+
+
+
+main p{
+    margin: 6em 0 0 2.3em;
+    font-size: 1.2rem;
     text-transform: uppercase;
-    letter-spacing: 0.2ch;
+    letter-spacing: 0.3em;
 }
 
 
-.principal>.p1>p{
-    margin: 0 20% 0 50px;
-    font-size: 40px;
+main h1{
+    margin: 0 0 2em 1em;
+    font-size:3rem;
+    letter-spacing: -1pt;
+    font-weight: 500;
+
+    
+}
+
+
+
+main button{
+    margin: 0 0 0 2.9em;
+    padding: 1em 2em;
+    
+    color:rgb(255, 255, 255);
+    font-size: 1rem;
+    
+    
+    font-weight: 600;
+
+    border: none;
+    border-radius: 0;
+
+    box-shadow:0 0.25rem 0.25rem #999;
+    background-color:#10032e;
+    
+
+
+}
+
+main button:hover{
+    background-color: black;
+    color: white;
+}
+
+
+main img{
+    margin: 4em 0 0 0;
+}
+
+
+
+
+/*2º SESSÃO: SERVIÇOS*/
+
+#texto{
+    grid-column: 1/4;
+    padding: 50px;
+
+    background-color:  #1F1F23;
+    color:#fafafa;
+    grid-area: t;
+}
+
+#texto p{
+    padding: 3%;
+}
+
+
+#texto h1{
+    margin: 3em 0 0 0;
+
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    text-align: center;
+}
+
+@media (max-width:800px){
+    
+   #texto h1{
+    margin: 1rem 0 0 0;
+
+   }
+}
+/*imagens*/
+
+#container-1{
+    background-color:  #1F1F23;
+    color: #fafafa;
+    grid-area: c1;
+
+    padding: 2.5rem;
+    text-align: center;
+}
+
+#container-1 h1{
+    margin: 1em 0 1em 0;
+    
+}
+
+
+#container-1 p{
+    margin: 0 0 2em 0;
+}
+
+
+#container-1:hover{
+    position: relative;
+    margin:-1.875rem 0 0 0;
+    transition: all .2s ease-in-out
+    
+}
+
+
+
+#container-2{
+    background-color:  #1F1F23;
+    color: #fafafa;
+
+    padding:  2.5rem;
+    text-align: center;
+
+    grid-area: c2;
+}
+
+#container-2 h1{
+    margin: 1em 0 1em 0;
+}
+
+
+#container-2 p{
+    margin: 0 0 2em 0;
+}
+
+#container-2:hover{
+    position: relative;
+    margin:-1.875rem 0 0 0;
+    transition: all .2s ease-in-out
+}
+
+
+
+
+
+#container-3{
+    background-color:  #1F1F23;
+    color: #fafafa;
+
+    padding: 2.5rem;
+    text-align: center;
+
+    grid-area: c3;
+}
+
+#container-3 h1{
+    margin: 1em 0 1em 0;
+}
+
+
+#container-3 p{
+    margin: 0 0 2em 0;
+}
+
+#container-3:hover{
+    position: relative;
+    margin:-1.875rem 0 0 0;
+    transition: all .2s ease-in-out
+}
+
+
+
+/*SESSÃO 3: QUEM SOMOS*/
+
+#texto2{
+    grid-column: 1/4;
+    padding: 3.125rem;
+    grid-area: t2;
+}
+
+
+#texto2 h1{
+
+    margin: 3em 0 3em 0;
+
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    text-align: left;
+}
+
+
+#texto2 p{
+    width: 60vw;
+    
+
+}
+
+/* Imagens ~*/
+
+#texto2-img1{
+    margin: 0 0 3em 0;
+    padding: 1.875rem;
+
+    
+    text-align: center;
+    
+    grid-area: d1;
+}
+
+#texto2-img1:hover{
+    position: relative;
+    margin:-1.25rem 0 0 0;
+    transition: all .2s ease-in-out
+}
+
+
+
+#texto2-img2{
+    margin: 0 0 3em 0;
+    padding: 1.875rem;
+    
+    text-align: center;
+    grid-area: d2;
+    
+}
+
+#texto2-img2:hover{
+    position: relative;
+    margin:-1.25rem 0 0 0;
+    transition: all .2s ease-in-out
+}
+
+
+
+#texto2-img3{
+    margin: 0 0 3em 0;
+    padding: 1.875rem;
+    
+    text-align: center;
+    grid-area: d3;
+   
+}
+
+#texto2-img3:hover{
+    position: relative;
+    margin:-1.25rem 0 0 0;
+    transition: all .2s ease-in-out
+}
+
+
+#imagem-2, #imagem-3, #imagem-4{
+    width: 320px;
+}
+
+
+
+/*última sessão*/
+
+#texto3{
+    grid-column: 1/4;
+    display: flex;
+    grid-area: t3;
+}
+
+
+#texto3 div{
+    width: 55vw;
+    padding: 4%;
+
+}
+
+
+#texto3 h2{
+
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    text-align: left;
+}
+
+
+#texto3 p{
+    width: 40vw;
+    margin: 4em 0 0 0;
+
+}
+
+/*Formulário*/
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 2em 0 2em 0;
+    width: 31.25rem;
+    padding: 1.5em 0 3em 2em;
+    background-color: rgb(245, 245, 245);
+    box-shadow:0 0.25rem 0.25rem #999;
+    font-size: 1.2rem;
+}
+
+input{
+    width: 31vw;
+    height: 6vh;
+    border-bottom: 1px solid rgb(27, 27, 27);
+    border-top:none;
+    border-left:none;
+    border-right: none;
+    background-color: rgba(153, 153, 153, 0);
+}
+
+input:focus{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+label{
+    margin: 2em 0 2em 0;
     font-weight: 500;
 }
 
-.principal>.p1>button{
-    margin: 10% 20% 0 50px;
-    background-color: #D9C7B8;
-    font-size: 18px;
-    padding: 2% 40px 2% 40px;
+ #submit{
+     margin: 2em 0 0 0;
+    width: 10vw;
+    height: 6vh;
     border: none;
-    border-radius:0.5em;
-    font-weight: 600;
-   
-}
-
-/*segunda div do conteúdo principal*/
-.principal>.p2{
-    grid-column-start:2;
-    margin: 0;
-    width: 100%;
-    height: 80vh;
-   
+    border-radius: 0;
+    font-size: 1rem;
+    box-shadow:0 0.25rem 0.25rem #999;
+    background-color: rgb(207, 207, 207);
     
-    position: static;
-    background-image: url(img/servic4s.jpg);
-    background-position: 50% 50%;
-    background-size: 800px;
-   
+}
 
+#submit:active{
+    background-color: rgb(36, 36, 36);
+    color: cornsilk;
 }
 
 
-/* Serviços */
 
+/*Rodapé*/
 
-#servicos{
-    display: grid;
-    grid-template-columns: 1fr  1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 20px;
+footer{
+    grid-column: 1/4;
+    background-color: #1F1F23;
+    color: #D1C2B0;
+    padding: 2.5rem;
     text-align: center;
+    grid-area: f;
 }
 
-
-
-#servicos>h1{
-    grid-column:1/4;
-    padding: 5%;
-    font-size: 30px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.2ch;
-    
+footer a{
+    text-decoration: none;
+    padding: 0.625rem;
 }
 
-#servicos>#s1{
-    grid-column-start:1;
-    margin:0;
-    padding:5%;
-    text-align: center;
-    /*background-color: rgb(179, 2, 2);*/
-
+footer a img{
+    margin: 1em 0 1em 0;
+    width: 1.875rem;
 }
-
-#servicos>#s1>img{
-    padding: 5%;
-
-}
-
-#servicos>#s1>h1{
-    padding: 2%;
-    font-size: 20px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.2ch;
-}
-
-#servicos>#s1>p{
-    padding: 2%;
-    
-}
-
-
-#servicos>#s2{
-    grid-column-start:2;
-    margin:0;
-    padding:5%;
-    /*background-color: rgb(2, 179, 61);*/
- 
-}
-
-#servicos>#s2>img{
-    padding: 5%;
-
-}
-
-#servicos>#s2>h1{
-    padding: 2%;
-    font-size: 20px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.2ch;
-}
-
-#servicos>#s2>p{
-    padding: 2%;
-    
-}
-
-#servicos>#s3{
-    grid-column-start:3;
-    margin:0;
-    padding:5%;
-    /*background-color: rgb(179, 2, 76);*/
-   
-}
-
-#servicos>#s3>img{
-    padding: 5%;
-
-}
-
-#servicos>#s3>h1{
-    padding: 2%;
-    font-size: 20px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.2ch;
-}
-
-#servicos>#s3>p{
-    padding: 2%;
-    
-}
-
-/* Seção de Formulário*/
-
-
