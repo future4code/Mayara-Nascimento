@@ -2,19 +2,20 @@ import React from 'react';
 import { CriarPlaylist } from "./Componente/Inicio.js";
 import styled from "styled-components";
 import PlaylistsCriadas from './Componente/Biblioteca.js';
+import PesquisarMusica from './Componente/Explorar.js';
 
 const Section = styled.div`
     display:grid;
     grid-template-columns: repeat(1fr, 3);
     grid-template-rows: 10vh 91vh;
-    color:black;
     justify-content: center;
     margin: 0;
+    border:none;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
       sans-serif;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    
 `
 const Nav = styled.div`
 font-size: 1.5rem;
@@ -48,7 +49,9 @@ class App extends React.Component {
       return <CriarPlaylist/>
     } else if (this.state.Tela === "Biblioteca"){
       return <PlaylistsCriadas/>
-    }
+    } if (this.state.Tela === "Pesquisar"){
+      return <PesquisarMusica/>
+    } 
   }
 
   Playlists = () =>{
@@ -60,12 +63,17 @@ class App extends React.Component {
     this.setState({Tela: "Inicio"})
   }
 
+  Pesquisar = () =>{
+    this.setState({Tela: "Pesquisar"})
+  }
+
   render() {
     return (<Section>
        <Nav>
                 <p><b>Lab</b>efy</p>
                 <button onClick ={this.AdicionarMusica}>Início</button>
                 <button onClick ={this.Playlists}>Biblioteca</button>
+                <button onClick ={this.Pesquisar}>Explorar</button>
        </Nav>
 
       {this.PaginaAtual()}
