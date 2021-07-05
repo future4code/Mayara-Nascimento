@@ -1,12 +1,12 @@
-import './App.css';
+import './Style.js';
 import {Switch, Route, BrowserRouter } from 'react-router-dom'
 import { AdminHomePage } from './pages/AdminHomePage'
-import { ApplicationFormPage } from './pages/ApplicationFormPage';
-import { ListTripsPage } from './pages/ListTripsPage';
-import { HomePage } from './pages/HomePage'
-import { LoginPage } from './pages/LoginPage'
-import {CreateTripPage} from './pages/CreateTripPage'
-import {TripDetailsPage} from './pages/TripDetailsPage'
+import { ApplicationFormPage } from './pages/ApplicationFormPage/ApplicationFormPage';
+import { ListTripsPage } from './pages/ListTripsPage/ListTripsPage';
+import { HomePage } from './pages/HomePage';
+import { LoginPage } from './pages/LoginPage/LoginPage';
+import {CreateTripPage} from './pages/CreateTripPage/CreateTripPage';
+import {TripDetailsPage} from './pages/TripDetailsPage';
 
 function App() {
   

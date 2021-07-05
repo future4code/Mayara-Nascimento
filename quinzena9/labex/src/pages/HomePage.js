@@ -1,7 +1,9 @@
 import React from 'react';
-import { useHistory } from 'react-router';
+import {useHistory} from 'react-router';
+import { Section } from '../Style';
+import foguet from '../img/foguet.png';
 export const HomePage = () => {
-    const history = useHistory ()
+    const history = useHistory()
     const ListaViagem = () => {
         history.push("/trips/list")
     }
@@ -10,13 +12,22 @@ export const HomePage = () => {
         history.push("/login")
     }
 
-    
-    return (
+
+    return ( 
+    <Section>
+        <nav>
+           
+        <img src ={foguet}></img><h1> LabeX</h1> 
         <div>
-            <h1>Login Admin</h1>
-            
-            <button onClick = {PageAdmin}>Admin</button>
-            <button onClick ={ListaViagem}>Lista Viagem</button>
+        <button 
+        onClick = {
+        PageAdmin}> Administrador </button> 
+        <button onClick = {
+            ListaViagem
+        }> conhecer viagens </button> 
         </div>
- )
+        </nav> 
+        </Section>
+         
+    )
 }
